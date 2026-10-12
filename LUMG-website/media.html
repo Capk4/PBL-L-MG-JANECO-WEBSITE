@@ -88,7 +88,7 @@ section{padding:64px 6vw}
 </div></section><footer><p>LÜMG – Letting Unused Matters Go · Group JANeco · F3 Mobile App PBL</p></footer>
 <script>
 // Fill these in – paste links, save, and re-upload index.html
-const LINKS={promo:"",doc:"",apk:"",demo:""};
+const LINKS={promo:"https://youtu.be/8jRjkFoWsCQ",doc:"https://youtu.be/jbrzbhZvEOo",apk:"",demo:""};
 const yt=u=>{const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);return m?"https://www.youtube.com/embed/"+m[1]:u};
 function vid(id,u){const e=document.getElementById(id);if(!u||!e)return;e.innerHTML='<iframe class="vid" src="'+yt(u)+'" title="Video" allowfullscreen loading="lazy"></iframe>'}
 vid("promoBox",LINKS.promo);vid("docBox",LINKS.doc);vid("demoBox",LINKS.demo);
