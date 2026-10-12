@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build & Test | LÜMG – JANeco PBL</title>
+<meta name="description" content="LÜMG helps people share, donate or recycle unused items. F3 Mobile App PBL project by group JANeco.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0c5a40;--gd:#083f2d;--lime:#8fd35a;--y:#f4c93d;--paper:#f6f1e3;--kraft:#d8b98b;--ink:#17261f;--w:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font:17px/1.6 Figtree,system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:'Bricolage Grotesque',Georgia,sans-serif;line-height:1.1;margin:0 0 .5em}
+h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800}h3{font-size:1.25rem}
+p{margin:0 0 1em;max-width:68ch}img{max-width:100%;display:block}a{color:inherit}
+.g{background:var(--g);color:#eaf7e2}.y{background:var(--y)}.k{background:var(--kraft)}
+.tag{display:inline-block;background:var(--y);color:var(--gd);font-weight:800;padding:.1em .45em;transform:rotate(-1.5deg)}
+.g .tag{background:var(--y)}.y .tag{background:var(--g);color:#fff}
+.hero{background:var(--paper);display:grid;grid-template-columns:1fr 1fr;min-height:88vh;padding:0}
+.hero .t{padding:8vh 6vw;align-self:center}.hero h1{font-size:clamp(4rem,12vw,8rem);font-weight:800;color:var(--g);margin:0}
+.hero .tl{font-size:1.5rem;font-family:'Bricolage Grotesque';font-weight:500;margin:.2em 0 1em}
+.hero .pic{background:url(assets/hero.jpg) center/cover;position:relative;min-height:300px}
+.hero .ph{position:absolute;right:6%;bottom:-30px;width:min(38%,230px);filter:drop-shadow(0 12px 18px #0006)}
+.btn{display:inline-block;background:var(--g);color:#fff;padding:.7em 1.3em;border-radius:99px;text-decoration:none;font-weight:600;margin:0 8px 8px 0;border:2px solid var(--g)}
+.btn.o{background:none;color:var(--g)}.g .btn{background:var(--y);color:var(--gd);border-color:var(--y)}
+.btn:hover,.btn:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--w);color:var(--ink);padding:22px;border-radius:6px 22px 6px 22px;box-shadow:4px 5px 0 #0002}
+.card h3{color:var(--g)}
+.team .card{text-align:center}.team img{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 auto 12px;border:5px solid var(--lime)}
+.team small{color:#4a5d52;font-weight:600}
+.ev{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}.ev figure{margin:0;background:#fff;padding:8px 8px 12px;transform:rotate(-1deg)}
+.ev figure:nth-child(2){transform:rotate(1.2deg)}.ev img{height:170px;width:100%;object-fit:cover}.ev figcaption{font-weight:600;padding-top:8px}
+.flow{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;counter-reset:s}
+.flow li{counter-increment:s;background:#fff;color:var(--ink);padding:14px 16px 14px 48px;position:relative;border-radius:10px;flex:1 1 200px}
+.flow li::before{content:counter(s);position:absolute;left:12px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--g);color:#fff;text-align:center;font-weight:800;line-height:26px}
+.scr{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 4px 22px}
+.scr figure{margin:0;flex:0 0 210px;scroll-snap-align:start;text-align:center}.scr img{width:210px}.scr figcaption{font-weight:600;margin-top:8px}
+.feat{display:grid;grid-template-columns:200px 1fr;gap:26px;align-items:center;margin-bottom:34px}
+.feat img{width:200px;filter:drop-shadow(0 8px 12px #0003)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:720px;background:#fff;color:var(--ink)}
+th{background:var(--gd);color:#fff;text-align:left}th,td{padding:12px;border-bottom:1px solid #ddd;vertical-align:top}td:first-child{font-weight:600}
+.todo{border:2px dashed #b8860b;background:#fff8d8;color:#5c4400;padding:14px 18px;border-radius:8px;margin:0 0 14px;font-size:.95rem}
+.todo::before{content:"✎ To fill in: ";font-weight:800}.g .todo,.y .todo,.k .todo{color:#5c4400}
+.vid{aspect-ratio:16/9;width:100%;max-width:860px;border:0;border-radius:10px;background:#000}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+ul.t{padding-left:1.1em;margin:0 0 1em}ul.t li{margin-bottom:.4em}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.gal div{aspect-ratio:4/3;background:#fff6;border:2px dashed #0c5a4088;border-radius:8px;display:grid;place-items:center;text-align:center;padding:8px;font-weight:600}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.qr{width:170px;height:170px;background:#fff;padding:8px;border-radius:8px;display:grid;place-items:center;text-align:center;color:#555;font-size:.85rem}
+footer{background:var(--gd);color:#bfe0b4;padding:34px 6vw;text-align:center}
+@media(max-width:760px){.hero,.cols{grid-template-columns:1fr}.hero .pic{min-height:260px}.feat{grid-template-columns:1fr;text-align:center}.feat img{margin:auto}section{padding:56px 5vw}.hero .ph{bottom:-20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+section{padding:64px 6vw}
+.top{position:sticky;top:0;z-index:20;background:var(--gd);color:#fff}
+.top .bar{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:8px 5vw}
+.top .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font:800 1.2rem 'Bricolage Grotesque',sans-serif}
+.top .brand img{height:34px;border-radius:4px}
+.top ul{list-style:none;display:flex;gap:4px;margin:0 0 0 auto;padding:0}
+.top li a{display:block;color:#dff3d3;text-decoration:none;padding:8px 14px;border-radius:99px;font-weight:600;font-size:.95rem}
+.top li a:hover,.top li a:focus-visible{background:#ffffff22;outline:0}
+.top li a[aria-current]{background:var(--lime);color:var(--gd)}
+.top button{display:none;margin-left:auto;background:none;border:2px solid #dff3d3;color:#fff;border-radius:8px;padding:6px 12px;font:600 .95rem Figtree,sans-serif}
+.pagehead{background:var(--g);color:#fff;padding:52px 6vw 30px}.pagehead .in{display:flex;flex-direction:column;gap:14px}
+.pagehead h1{font-size:clamp(2.2rem,6vw,3.8rem);margin:0}.pagehead p{margin:0;color:#cfe9c4}
+.sub{display:flex;flex-wrap:wrap;gap:8px}.sub a{background:#ffffff1f;color:#fff;text-decoration:none;padding:5px 14px;border-radius:99px;font-size:.9rem}.sub a:hover{background:var(--y);color:var(--gd)}
+.hero{min-height:calc(100vh - 52px)}
+.tiles a{text-decoration:none;display:block}.tiles .card{height:100%;transition:transform .15s}.tiles a:hover .card,.tiles a:focus-visible .card{transform:translateY(-3px)}
+.tiles p{margin:0}
+@media(max-width:820px){.top button{display:block}.top ul{display:none;position:absolute;left:0;right:0;top:100%;background:var(--gd);flex-direction:column;padding:8px 5vw 16px;margin:0}.top ul.open{display:flex}.top li a{border-radius:8px}}
+</style></head><body>
+<div class="top"><div class="bar"><a class="brand" href="index.html"><img src="assets/logo.png" alt="">LÜMG</a>
+<button aria-expanded="false" aria-controls="menu">Menu</button><ul id="menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="design.html">Design</a></li><li><a href="build.html" aria-current="page">Build & Test</a></li><li><a href="media.html">Videos & Gallery</a></li><li><a href="app.html">The App</a></li></ul></div></div>
+<div class="pagehead"><div class="in"><h1>Build & test</h1><p>How we built LÜMG, how we tested it, and the documents behind it.</p><nav class="sub" aria-label="On this page"><a href="#dev">App development</a><a href="#testing">Testing & improvement</a><a href="#docs">Project documentation</a></nav></div></div><section id="dev" class="g"><div class="in">
+<h2><span class="tag">App development</span></h2>
+<div class="cols"><div>
+<h3>Tools and technology</h3>
+<ul class="t"><li><strong>Framework:</strong> Flutter (Dart), one codebase for Android and iOS</li><li><strong>Backend:</strong> Supabase – database, authentication, image storage</li><li><strong>AI:</strong> item category prediction and recommended action</li><li><strong>Design:</strong> Canva (proposal, screen designs)</li></ul>
+<h3>Technical challenges and solutions</h3>
+<ul class="t"><li><strong>Protecting uploaded photos:</strong> we added Supabase storage policies so each user can only change their own listing images.</li><li><strong>Deleting listings safely:</strong> users can delete only their own listings, with a confirmation dialog and loading state.</li></ul>
+</div><div>
+<h3>Development process</h3>
+<p class="todo">Describe your steps (proposal → design → coding → testing) and add screenshots of your code, Supabase dashboard and Flutter running on a device.</p></div></div>
+</div></section><section id="testing" class="k"><div class="in">
+<h2><span class="tag">Testing &amp; improvement</span></h2>
+<p class="todo">Testing method (for example, user testing with classmates or family), who tested, feedback received, bugs found, improvements made.</p>
+<p class="todo">Before vs After: add two screenshots side by side showing a change you made after feedback.</p>
+</div></section><section id="docs" class="k"><div class="in">
+<h2><span class="tag">PBL project documentation</span></h2>
+<ul class="t"><li><strong>Project proposal</strong> – <a href="https://www.canva.com/design/DAG_HyGykA4/VwX7IKqLtb6SDa5rvIVHNQ/view" target="_blank" rel="noopener">view on Canva</a></li><li>Problem statement and research</li><li>Wireframes, wireflow and user flow</li><li>UI designs and final screens</li><li>Working mobile app</li><li>Promotional video and documentary</li><li>This project website</li></ul>
+<p class="todo">Link each item to its file (PDF, Canva or Drive link) so visitors can open the evidence.</p>
+</div></section><footer><p>LÜMG – Letting Unused Matters Go · Group JANeco · F3 Mobile App PBL</p></footer>
+<script>
+// Fill these in – paste links, save, and re-upload index.html
+const LINKS={promo:"",doc:"",apk:"",demo:""};
+const yt=u=>{const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);return m?"https://www.youtube.com/embed/"+m[1]:u};
+function vid(id,u){const e=document.getElementById(id);if(!u||!e)return;e.innerHTML='<iframe class="vid" src="'+yt(u)+'" title="Video" allowfullscreen loading="lazy"></iframe>'}
+vid("promoBox",LINKS.promo);vid("docBox",LINKS.doc);vid("demoBox",LINKS.demo);
+if(LINKS.apk){const ab=document.getElementById("appBtns");if(ab)ab.innerHTML='<a class="btn" href="'+LINKS.apk+'">Download the app</a>';
+const qb=document.getElementById("qrBox");if(qb)qb.innerHTML='<img alt="QR code to the app" width="154" height="154" src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data='+encodeURIComponent(LINKS.apk)+'">'}
+
+const b=document.querySelector('.top button'),l=document.querySelector('.top ul');
+b.addEventListener('click',()=>{const o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+l.addEventListener('click',e=>{if(e.target.tagName==='A')l.classList.remove('open')});
+</script></body></html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | LÜMG – JANeco PBL</title>
+<meta name="description" content="LÜMG helps people share, donate or recycle unused items. F3 Mobile App PBL project by group JANeco.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0c5a40;--gd:#083f2d;--lime:#8fd35a;--y:#f4c93d;--paper:#f6f1e3;--kraft:#d8b98b;--ink:#17261f;--w:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font:17px/1.6 Figtree,system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:'Bricolage Grotesque',Georgia,sans-serif;line-height:1.1;margin:0 0 .5em}
+h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800}h3{font-size:1.25rem}
+p{margin:0 0 1em;max-width:68ch}img{max-width:100%;display:block}a{color:inherit}
+.g{background:var(--g);color:#eaf7e2}.y{background:var(--y)}.k{background:var(--kraft)}
+.tag{display:inline-block;background:var(--y);color:var(--gd);font-weight:800;padding:.1em .45em;transform:rotate(-1.5deg)}
+.g .tag{background:var(--y)}.y .tag{background:var(--g);color:#fff}
+.hero{background:var(--paper);display:grid;grid-template-columns:1fr 1fr;min-height:88vh;padding:0}
+.hero .t{padding:8vh 6vw;align-self:center}.hero h1{font-size:clamp(4rem,12vw,8rem);font-weight:800;color:var(--g);margin:0}
+.hero .tl{font-size:1.5rem;font-family:'Bricolage Grotesque';font-weight:500;margin:.2em 0 1em}
+.hero .pic{background:url(assets/hero.jpg) center/cover;position:relative;min-height:300px}
+.hero .ph{position:absolute;right:6%;bottom:-30px;width:min(38%,230px);filter:drop-shadow(0 12px 18px #0006)}
+.btn{display:inline-block;background:var(--g);color:#fff;padding:.7em 1.3em;border-radius:99px;text-decoration:none;font-weight:600;margin:0 8px 8px 0;border:2px solid var(--g)}
+.btn.o{background:none;color:var(--g)}.g .btn{background:var(--y);color:var(--gd);border-color:var(--y)}
+.btn:hover,.btn:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--w);color:var(--ink);padding:22px;border-radius:6px 22px 6px 22px;box-shadow:4px 5px 0 #0002}
+.card h3{color:var(--g)}
+.team .card{text-align:center}.team img{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 auto 12px;border:5px solid var(--lime)}
+.team small{color:#4a5d52;font-weight:600}
+.ev{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}.ev figure{margin:0;background:#fff;padding:8px 8px 12px;transform:rotate(-1deg)}
+.ev figure:nth-child(2){transform:rotate(1.2deg)}.ev img{height:170px;width:100%;object-fit:cover}.ev figcaption{font-weight:600;padding-top:8px}
+.flow{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;counter-reset:s}
+.flow li{counter-increment:s;background:#fff;color:var(--ink);padding:14px 16px 14px 48px;position:relative;border-radius:10px;flex:1 1 200px}
+.flow li::before{content:counter(s);position:absolute;left:12px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--g);color:#fff;text-align:center;font-weight:800;line-height:26px}
+.scr{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 4px 22px}
+.scr figure{margin:0;flex:0 0 210px;scroll-snap-align:start;text-align:center}.scr img{width:210px}.scr figcaption{font-weight:600;margin-top:8px}
+.feat{display:grid;grid-template-columns:200px 1fr;gap:26px;align-items:center;margin-bottom:34px}
+.feat img{width:200px;filter:drop-shadow(0 8px 12px #0003)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:720px;background:#fff;color:var(--ink)}
+th{background:var(--gd);color:#fff;text-align:left}th,td{padding:12px;border-bottom:1px solid #ddd;vertical-align:top}td:first-child{font-weight:600}
+.todo{border:2px dashed #b8860b;background:#fff8d8;color:#5c4400;padding:14px 18px;border-radius:8px;margin:0 0 14px;font-size:.95rem}
+.todo::before{content:"✎ To fill in: ";font-weight:800}.g .todo,.y .todo,.k .todo{color:#5c4400}
+.vid{aspect-ratio:16/9;width:100%;max-width:860px;border:0;border-radius:10px;background:#000}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+ul.t{padding-left:1.1em;margin:0 0 1em}ul.t li{margin-bottom:.4em}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.gal div{aspect-ratio:4/3;background:#fff6;border:2px dashed #0c5a4088;border-radius:8px;display:grid;place-items:center;text-align:center;padding:8px;font-weight:600}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.qr{width:170px;height:170px;background:#fff;padding:8px;border-radius:8px;display:grid;place-items:center;text-align:center;color:#555;font-size:.85rem}
+footer{background:var(--gd);color:#bfe0b4;padding:34px 6vw;text-align:center}
+@media(max-width:760px){.hero,.cols{grid-template-columns:1fr}.hero .pic{min-height:260px}.feat{grid-template-columns:1fr;text-align:center}.feat img{margin:auto}section{padding:56px 5vw}.hero .ph{bottom:-20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+section{padding:64px 6vw}
+.top{position:sticky;top:0;z-index:20;background:var(--gd);color:#fff}
+.top .bar{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:8px 5vw}
+.top .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font:800 1.2rem 'Bricolage Grotesque',sans-serif}
+.top .brand img{height:34px;border-radius:4px}
+.top ul{list-style:none;display:flex;gap:4px;margin:0 0 0 auto;padding:0}
+.top li a{display:block;color:#dff3d3;text-decoration:none;padding:8px 14px;border-radius:99px;font-weight:600;font-size:.95rem}
+.top li a:hover,.top li a:focus-visible{background:#ffffff22;outline:0}
+.top li a[aria-current]{background:var(--lime);color:var(--gd)}
+.top button{display:none;margin-left:auto;background:none;border:2px solid #dff3d3;color:#fff;border-radius:8px;padding:6px 12px;font:600 .95rem Figtree,sans-serif}
+.pagehead{background:var(--g);color:#fff;padding:52px 6vw 30px}.pagehead .in{display:flex;flex-direction:column;gap:14px}
+.pagehead h1{font-size:clamp(2.2rem,6vw,3.8rem);margin:0}.pagehead p{margin:0;color:#cfe9c4}
+.sub{display:flex;flex-wrap:wrap;gap:8px}.sub a{background:#ffffff1f;color:#fff;text-decoration:none;padding:5px 14px;border-radius:99px;font-size:.9rem}.sub a:hover{background:var(--y);color:var(--gd)}
+.hero{min-height:calc(100vh - 52px)}
+.tiles a{text-decoration:none;display:block}.tiles .card{height:100%;transition:transform .15s}.tiles a:hover .card,.tiles a:focus-visible .card{transform:translateY(-3px)}
+.tiles p{margin:0}
+@media(max-width:820px){.top button{display:block}.top ul{display:none;position:absolute;left:0;right:0;top:100%;background:var(--gd);flex-direction:column;padding:8px 5vw 16px;margin:0}.top ul.open{display:flex}.top li a{border-radius:8px}}
+</style></head><body>
+<div class="top"><div class="bar"><a class="brand" href="index.html"><img src="assets/logo.png" alt="">LÜMG</a>
+<button aria-expanded="false" aria-controls="menu">Menu</button><ul id="menu"><li><a href="index.html">Home</a></li><li><a href="about.html" aria-current="page">About</a></li><li><a href="design.html">Design</a></li><li><a href="build.html">Build & Test</a></li><li><a href="media.html">Videos & Gallery</a></li><li><a href="app.html">The App</a></li></ul></div></div>
+<div class="pagehead"><div class="in"><h1>About LÜMG</h1><p>The team, the problem we noticed, and how LÜMG answers it.</p><nav class="sub" aria-label="On this page"><a href="#team">Meet the team</a><a href="#problem">Problem & target user</a><a href="#solution">Our solution</a></nav></div></div><section id="team" class="y"><div class="in team">
+<h2><span class="tag">Meet the team</span></h2>
+<p><strong>Group JANeco</strong> – five students building one idea: make it easy to let unused things go.</p>
+<div class="grid">
+<div class="card"><img src="assets/arryan.jpg" alt="Arryan Rayqal"><h3>Arryan Rayqal</h3><small>Chief Executive Officer</small><p class="todo">Responsibilities</p></div>
+<div class="card"><img src="assets/ammar.jpg" alt="Wan Ammar Daiyan"><h3>Wan Ammar Daiyan</h3><small>Chief Operating Officer</small><p class="todo">Responsibilities</p></div>
+<div class="card"><img src="assets/asyraf.jpg" alt="Muhammad Asyraf"><h3>Muhammad Asyraf</h3><small>Chief Marketing Officer</small><p class="todo">Responsibilities</p></div>
+<div class="card"><img src="assets/naqeeb.jpg" alt="Wan Muhammad Naqeeb"><h3>Wan Muhammad Naqeeb</h3><small>User Interface Designer</small><p class="todo">Responsibilities</p></div>
+<div class="card"><img src="assets/fareez.jpg" alt="Ahmad Fareez Fitri"><h3>Ahmad Fareez Fitri</h3><small>Executive Assistant</small><p class="todo">Responsibilities</p></div>
+</div></div></section><section id="problem"><div class="in">
+<h2><span class="tag">Problem &amp; target user</span></h2>
+<div class="cols"><div>
+<h3>Problem statement</h3>
+<p>In neighbourhoods and homes everywhere, people over-consume and end up with unused items cluttering their space. They overbuy or outgrow things but have no easy way to pass them on. Current options fall short because recipients must be found and given time. As a result, usable items end up in landfills and harm the environment.</p>
+<h3>Target users</h3>
+<ul class="t"><li>Neighbourhood residents and families with outgrown or unused items</li><li>People who want to donate or recycle but don't know where</li><li>Schools, charities and community groups that can reuse items</li></ul>
+</div><div>
+<h3>Project objectives</h3>
+<ul class="t"><li>Make giving away, donating or recycling an item fast and easy</li><li>Show nearby donation and recycling locations</li><li>Use AI to suggest the right category and action</li><li>Raise awareness of overconsumption</li></ul>
+</div></div>
+<h3>Evidence</h3>
+<div class="ev">
+<figure><img src="assets/p-charity.jpg" alt="Volunteers sorting donations"><figcaption>Unknown donation spots</figcaption></figure>
+<figure><img src="assets/p-waste.jpg" alt="Wasted household items"><figcaption>Usable items go to waste</figcaption></figure>
+<figure><img src="assets/p-ocean.jpg" alt="Plastic waste in the ocean"><figcaption>Environmental harm</figcaption></figure></div>
+<p class="todo" style="margin-top:18px">Research evidence: our proposal points to two themes – low recycling rates &amp; landfill pressure, and household waste &amp; reuse habits. Add the actual statistics, survey results or articles here with their sources.</p>
+</div></section><section id="solution" class="g"><div class="in">
+<h2><span class="tag">Our solution</span></h2>
+<p><strong>LÜMG</strong> is a mobile app that guides people to share, donate or recycle unwanted items, and shows nearby locations that give those items a second life.</p>
+<div class="grid">
+<div class="card"><h3>Purpose</h3><p>Make responsible waste management easy, fast and accessible for everyone.</p></div>
+<div class="card"><h3>How it helps</h3><p>Users post items in seconds, browse what neighbours are giving away, and find the nearest drop-off point on a map.</p></div>
+<div class="card"><h3>AI support</h3><p>AI predicts the item's category and recommends the best action, so items aren't sent to an inappropriate place.</p></div>
+<div class="card"><h3>Built with</h3><p>Flutter (Dart) for the mobile app and Supabase for database, login and image storage.</p></div>
+</div></div></section><footer><p>LÜMG – Letting Unused Matters Go · Group JANeco · F3 Mobile App PBL</p></footer>
+<script>
+// Fill these in – paste links, save, and re-upload index.html
+const LINKS={promo:"",doc:"",apk:"",demo:""};
+const yt=u=>{const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);return m?"https://www.youtube.com/embed/"+m[1]:u};
+function vid(id,u){const e=document.getElementById(id);if(!u||!e)return;e.innerHTML='<iframe class="vid" src="'+yt(u)+'" title="Video" allowfullscreen loading="lazy"></iframe>'}
+vid("promoBox",LINKS.promo);vid("docBox",LINKS.doc);vid("demoBox",LINKS.demo);
+if(LINKS.apk){const ab=document.getElementById("appBtns");if(ab)ab.innerHTML='<a class="btn" href="'+LINKS.apk+'">Download the app</a>';
+const qb=document.getElementById("qrBox");if(qb)qb.innerHTML='<img alt="QR code to the app" width="154" height="154" src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data='+encodeURIComponent(LINKS.apk)+'">'}
+
+const b=document.querySelector('.top button'),l=document.querySelector('.top ul');
+b.addEventListener('click',()=>{const o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+l.addEventListener('click',e=>{if(e.target.tagName==='A')l.classList.remove('open')});
+</script></body></html>
