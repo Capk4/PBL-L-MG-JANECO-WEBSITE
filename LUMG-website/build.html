@@ -39,8 +39,6 @@ p{margin:0 0 1em;max-width:68ch}img{max-width:100%;display:block}a{color:inherit
 .feat img{width:200px;filter:drop-shadow(0 8px 12px #0003)}
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:720px;background:#fff;color:var(--ink)}
 th{background:var(--gd);color:#fff;text-align:left}th,td{padding:12px;border-bottom:1px solid #ddd;vertical-align:top}td:first-child{font-weight:600}
-.todo{border:2px dashed #b8860b;background:#fff8d8;color:#5c4400;padding:14px 18px;border-radius:8px;margin:0 0 14px;font-size:.95rem}
-.todo::before{content:"✎ To fill in: ";font-weight:800}.g .todo,.y .todo,.k .todo{color:#5c4400}
 .vid{aspect-ratio:16/9;width:100%;max-width:860px;border:0;border-radius:10px;background:#000}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
 ul.t{padding-left:1.1em;margin:0 0 1em}ul.t li{margin-bottom:.4em}
@@ -81,18 +79,18 @@ section{padding:64px 6vw}
 <ul class="t"><li><strong>Protecting uploaded photos:</strong> we added Supabase storage policies so each user can only change their own listing images.</li><li><strong>Deleting listings safely:</strong> users can delete only their own listings, with a confirmation dialog and loading state.</li></ul>
 </div><div>
 <h3>Development process</h3>
-<p class="todo">Describe your steps (proposal → design → coding → testing) and add screenshots of your code, Supabase dashboard and Flutter running on a device.</p></div></div>
+<p>The development workflow is organised around the project proposal, interface design, Flutter implementation, Supabase integration and testing. Screenshots can be used as supporting evidence for each stage when available.</p></div></div>
 </div></section><section id="testing" class="k"><div class="in">
 <h2><span class="tag">Testing &amp; improvement</span></h2>
-<p class="todo">Testing method (for example, user testing with classmates or family), who tested, feedback received, bugs found, improvements made.</p>
-<p class="todo">Before vs After: add two screenshots side by side showing a change you made after feedback.</p>
+<p>A reliable evaluation should record the task being tested, the expected outcome, the observed result and any issue found. This page does not claim specific test results or user feedback that have not been documented.</p>
+<p>When a change is made in response to feedback, compare the earlier and updated screens and explain what changed and why. Only include a comparison when both versions are available.</p>
 </div></section><section id="docs" class="k"><div class="in">
 <h2><span class="tag">PBL project documentation</span></h2>
 <ul class="t"><li><strong>Project proposal</strong> – <a href="https://www.canva.com/design/DAG_HyGykA4/VwX7IKqLtb6SDa5rvIVHNQ/view" target="_blank" rel="noopener">view on Canva</a></li><li>Problem statement and research</li><li>Wireframes, wireflow and user flow</li><li>UI designs and final screens</li><li>Working mobile app</li><li>Promotional video and documentary</li><li>This project website</li></ul>
-<p class="todo">Link each item to its file (PDF, Canva or Drive link) so visitors can open the evidence.</p>
+
 </div></section><footer><p>LÜMG – Letting Unused Matters Go · Group JANeco · F3 Mobile App PBL</p></footer>
 <script>
-// Fill these in – paste links, save, and re-upload index.html
+// Project media and distribution links are configured below.
 const LINKS={promo:"",doc:"",apk:"",demo:""};
 const yt=u=>{const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);return m?"https://www.youtube.com/embed/"+m[1]:u};
 function vid(id,u){const e=document.getElementById(id);if(!u||!e)return;e.innerHTML='<iframe class="vid" src="'+yt(u)+'" title="Video" allowfullscreen loading="lazy"></iframe>'}
