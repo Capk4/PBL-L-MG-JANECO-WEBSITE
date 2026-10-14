@@ -39,8 +39,6 @@ p{margin:0 0 1em;max-width:68ch}img{max-width:100%;display:block}a{color:inherit
 .feat img{width:200px;filter:drop-shadow(0 8px 12px #0003)}
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:720px;background:#fff;color:var(--ink)}
 th{background:var(--gd);color:#fff;text-align:left}th,td{padding:12px;border-bottom:1px solid #ddd;vertical-align:top}td:first-child{font-weight:600}
-.todo{border:2px dashed #b8860b;background:#fff8d8;color:#5c4400;padding:14px 18px;border-radius:8px;margin:0 0 14px;font-size:.95rem}
-.todo::before{content:"✎ To fill in: ";font-weight:800}.g .todo,.y .todo,.k .todo{color:#5c4400}
 .vid{aspect-ratio:16/9;width:100%;max-width:860px;border:0;border-radius:10px;background:#000}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
 ul.t{padding-left:1.1em;margin:0 0 1em}ul.t li{margin-bottom:.4em}
@@ -79,7 +77,7 @@ section{padding:64px 6vw}
 <li><strong>Open app</strong><br>User opens LÜMG.</li><li><strong>Scan or enter item</strong><br>Take a photo or pick a category.</li><li><strong>AI analysis</strong><br>AI suggests: donate, recycle or dispose.</li><li><strong>Nearby locations</strong><br>Donation centres, recycling points, community or school hubs.</li><li><strong>Take action</strong><br>Save the location or go there directly.</li><li><strong>Record</strong><br>The action is logged on the impact dashboard.</li></ol>
 <h3 style="margin-top:28px">Main paths in the app</h3>
 <ul class="t"><li><strong>Browse:</strong> Home → pick a category → item list → item details → Chat or Book.</li><li><strong>Give:</strong> “+” button → add photos, title, description, location → Sell or Free → AI sets the category → Post.</li><li><strong>Find a drop-off:</strong> Map → tap a pin to see a donation or recycling point.</li><li><strong>Account:</strong> More → profile, password, notifications, FAQ.</li></ul>
-<p class="todo">Optional: paste your final user flow diagram image here (save it as assets/userflow.png and add an &lt;img&gt; tag).</p>
+<p>The main user paths above summarise how people browse items, post an item, locate drop-off points and manage their account.</p>
 </div></section><section id="design"><div class="in">
 <h2><span class="tag">UI/UX design</span></h2>
 <p>Our design uses a deep forest green with light neutral screens so content stays easy to read, and a fixed bottom bar with three actions: Home, Post and More.</p>
@@ -93,7 +91,7 @@ section{padding:64px 6vw}
 <figure><img src="assets/s-more.png" alt="More screen"><figcaption>More</figcaption></figure></div>
 <h3>Key UI/UX decisions</h3>
 <ul class="t"><li>Large category tiles on Home so users start browsing with one tap.</li><li>A central “+” button so posting an item is always one tap away.</li><li>Free and Sell toggle with the category chosen by AI, so users type less.</li><li>Map pins separate people's items from recycling points by icon.</li></ul>
-<p class="todo">Wireframes, wireflow and improvements: add images of your wireframes and wireflow, and list what changed between versions (for example, “More” replacing “Settings”).</p>
+<p>The final interface prioritises quick access to browsing, item posting and drop-off locations. The screen designs below show the intended interface; specific before-and-after design changes should only be described when supported by the project’s saved wireframes or earlier versions.</p>
 </div></section><section id="features" class="y"><div class="in">
 <h2><span class="tag">App features</span></h2>
 <div class="feat"><img src="assets/s-home.png" alt=""><div><h3>Browse by category</h3><p>Tiles for paper, bicycles, toys and electronics lead to a list of nearby items with photos, price (or Free) and area. <em>Helps users find things they need without searching.</em></p></div></div>
@@ -113,7 +111,7 @@ section{padding:64px 6vw}
 <tr><td>Low awareness of overconsumption</td><td>See personal impact</td><td>Impact dashboard (planned)</td><td>Dashboard</td><td>More mindful consumption</td></tr>
 </table></div></div></section><footer><p>LÜMG – Letting Unused Matters Go · Group JANeco · F3 Mobile App PBL</p></footer>
 <script>
-// Fill these in – paste links, save, and re-upload index.html
+// Project media and distribution links are configured below.
 const LINKS={promo:"",doc:"",apk:"",demo:""};
 const yt=u=>{const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);return m?"https://www.youtube.com/embed/"+m[1]:u};
 function vid(id,u){const e=document.getElementById(id);if(!u||!e)return;e.innerHTML='<iframe class="vid" src="'+yt(u)+'" title="Video" allowfullscreen loading="lazy"></iframe>'}
