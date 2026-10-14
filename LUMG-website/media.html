@@ -73,19 +73,19 @@ section{padding:64px 6vw}
 <div class="pagehead"><div class="in"><h1>Videos & gallery</h1><p>Our promo video, the project documentary and photos from the journey.</p><nav class="sub" aria-label="On this page"><a href="#promo">Promo video</a><a href="#documentary">Documentary</a><a href="#gallery">Gallery</a></nav></div></div><section id="promo"><div class="in">
 <h2><span class="tag">Promotional video</span></h2>
 <p>Why should people use LÜMG?</p>
-<div id="promoBox"><p class="todo">Upload your promo video to YouTube, then paste the link into LINKS.promo at the top of the script in index.html. The video will appear here.</p></div>
+<div id="promoBox"></div>
 </div></section><section id="documentary" class="y"><div class="in">
 <h2><span class="tag">Project documentary</span></h2>
 <p>Problem → Research → Idea → Design → Development → Testing → Improvement → Final product.</p>
-<div id="docBox"><p class="todo">Upload your documentary to YouTube, then paste the link into LINKS.doc in index.html.</p></div>
+<div id="docBox"></div>
 </div></section><section id="gallery"><div class="in">
 <h2><span class="tag">Project gallery</span></h2>
 <div class="gal">
 <div><img src="assets/brain.png" alt="Brainstorming"></div><div><img src="assets/discuss.png" alt="Group Discussion"></div><div><img src="assets/research.png" alt="Research"></div><div><img src="assets/wireframe.png" alt="Wireframing"></div><div><img src="assets/coding.png" alt="Coding"></div><div><img src="assets/feedback.png" alt="User Feedback"></div><div><img src="assets/present.png" alt="Presentation"></div></div>
-<p class="todo" style="margin-top:18px">Replace each box with a photo: &lt;div&gt;&lt;img src="assets/gallery1.jpg" alt="Brainstorming"&gt;&lt;/div&gt;</p>
+
 </div></section><footer><p>LÜMG – Letting Unused Matters Go · Group JANeco · F3 Mobile App PBL</p></footer>
 <script>
-// Fill these in – paste links, save, and re-upload index.html
+// Project media and distribution links are configured below.
 const LINKS={promo:"https://youtu.be/8jRjkFoWsCQ",doc:"https://youtu.be/jbrzbhZvEOo",apk:"",demo:""};
 const yt=u=>{const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);return m?"https://www.youtube.com/embed/"+m[1]:u};
 function vid(id,u){const e=document.getElementById(id);if(!u||!e)return;e.innerHTML='<iframe class="vid" src="'+yt(u)+'" title="Video" allowfullscreen loading="lazy"></iframe>'}
