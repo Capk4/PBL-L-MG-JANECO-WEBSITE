@@ -39,8 +39,6 @@ p{margin:0 0 1em;max-width:68ch}img{max-width:100%;display:block}a{color:inherit
 .feat img{width:200px;filter:drop-shadow(0 8px 12px #0003)}
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:720px;background:#fff;color:var(--ink)}
 th{background:var(--gd);color:#fff;text-align:left}th,td{padding:12px;border-bottom:1px solid #ddd;vertical-align:top}td:first-child{font-weight:600}
-.todo{border:2px dashed #b8860b;background:#fff8d8;color:#5c4400;padding:14px 18px;border-radius:8px;margin:0 0 14px;font-size:.95rem}
-.todo::before{content:"✎ To fill in: ";font-weight:800}.g .todo,.y .todo,.k .todo{color:#5c4400}
 .vid{aspect-ratio:16/9;width:100%;max-width:860px;border:0;border-radius:10px;background:#000}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
 ul.t{padding-left:1.1em;margin:0 0 1em}ul.t li{margin-bottom:.4em}
@@ -77,8 +75,8 @@ section{padding:64px 6vw}
 <div class="cols"><div>
 <h3>How to use LÜMG</h3>
 <ul class="t"><li>Open the app and browse the categories on Home.</li><li>Tap an item to see details, then Chat or Book.</li><li>Tap “+” to post something you no longer need.</li><li>Open Map to find donation and recycling points.</li></ul>
-<div id="appBtns"><p class="todo">Add your APK or demo link in LINKS.apk / LINKS.demo.</p></div>
-</div><div><h3>Scan to open</h3><div class="qr" id="qrBox">QR code appears when LINKS.apk is set</div></div></div>
+<div id="appBtns"><p>A public app download or demo link is not currently configured. The app screens and project videos provide an overview of the concept while distribution is unavailable.</p></div>
+</div><div><h3>Scan to open</h3><div class="qr" id="qrBox">No public app download link is available yet.</div></div></div>
 <p style="margin-top:20px">Final screens are shown in the <a href="design.html#design">UI/UX page</a>.</p>
 <div id="demoBox"></div>
 </div></section><section id="impact"><div class="in">
@@ -88,17 +86,17 @@ section{padding:64px 6vw}
 <div class="card"><h3>Support the community</h3><p>Items reach schools, neighbours or charities that need them.</p></div>
 <div class="card"><h3>Promote sustainability</h3><p>Encourages mindful consumption and eco-friendly habits.</p></div>
 <div class="card"><h3>Raise awareness</h3><p>Users become more conscious of overconsumption.</p></div></div>
-<p class="todo" style="margin-top:18px">Evidence the solution is useful: add tester quotes, survey results or the number of items posted during testing.</p>
+<p style="margin-top:18px">LÜMG is intended to make sharing, donating and recycling easier. No verified impact figures or user-test results are presented here, so the project’s effectiveness should not be quantified without recorded evidence.</p>
 </div></section><section id="future"><div class="in">
 <h2><span class="tag">Future development</span></h2>
 <div class="cols"><div>
 <h3>Current limitations</h3>
-<ul class="t"><li>Impact dashboard is not built yet.</li><li>Map covers a small set of locations.</li><li class="todo" style="list-style:none">Add other limitations and unfinished features.</li></ul></div><div>
+<ul class="t"><li>Impact dashboard is not built yet.</li><li>Map covers a small set of locations.</li><li>Public app distribution and demo links are not currently available.</li></ul></div><div>
 <h3>Next steps</h3>
 <ul class="t"><li>Full impact dashboard that logs every action</li><li>AI photo scanning for faster posting</li><li>Partner donation centres, schools and charities</li><li>Pick-up reminders and ratings for trusted givers</li><li>Expand from one neighbourhood to the whole country</li></ul></div></div>
 </div></section><footer><p>LÜMG – Letting Unused Matters Go · Group JANeco · F3 Mobile App PBL</p></footer>
 <script>
-// Fill these in – paste links, save, and re-upload index.html
+// Project media and distribution links are configured below.
 const LINKS={promo:"https://youtu.be/8jRjkFoWsCQ",doc:"https://youtu.be/jbrzbhZvEOo",apk:"",demo:""};
 const yt=u=>{const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);return m?"https://www.youtube.com/embed/"+m[1]:u};
 function vid(id,u){const e=document.getElementById(id);if(!u||!e)return;e.innerHTML='<iframe class="vid" src="'+yt(u)+'" title="Video" allowfullscreen loading="lazy"></iframe>'}
