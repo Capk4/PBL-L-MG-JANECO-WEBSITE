@@ -39,8 +39,6 @@ p{margin:0 0 1em;max-width:68ch}img{max-width:100%;display:block}a{color:inherit
 .feat img{width:200px;filter:drop-shadow(0 8px 12px #0003)}
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:720px;background:#fff;color:var(--ink)}
 th{background:var(--gd);color:#fff;text-align:left}th,td{padding:12px;border-bottom:1px solid #ddd;vertical-align:top}td:first-child{font-weight:600}
-.todo{border:2px dashed #b8860b;background:#fff8d8;color:#5c4400;padding:14px 18px;border-radius:8px;margin:0 0 14px;font-size:.95rem}
-.todo::before{content:"✎ To fill in: ";font-weight:800}.g .todo,.y .todo,.k .todo{color:#5c4400}
 .vid{aspect-ratio:16/9;width:100%;max-width:860px;border:0;border-radius:10px;background:#000}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
 ul.t{padding-left:1.1em;margin:0 0 1em}ul.t li{margin-bottom:.4em}
@@ -76,11 +74,11 @@ section{padding:64px 6vw}
 <h2><span class="tag">Meet the team</span></h2>
 <p><strong>Group JANeco</strong> – five students building one idea: make it easy to let unused things go.</p>
 <div class="grid">
-<div class="card"><img src="assets/arryan.jpg" alt="Arryan Rayqal"><h3>Arryan Rayqal</h3><small>Chief Executive Officer</small><p class="todo">overview</p></div>
-<div class="card"><img src="assets/ammar.jpg" alt="Wan Ammar Daiyan"><h3>Wan Ammar Daiyan</h3><small>Chief Operating Officer</small><p class="todo">Responsibilities</p></div>
-<div class="card"><img src="assets/asyraf.jpg" alt="Muhammad Asyraf"><h3>Muhammad Asyraf</h3><small>Chief Marketing Officer</small><p class="todo">Responsibilities</p></div>
-<div class="card"><img src="assets/naqeeb.jpg" alt="Wan Muhammad Naqeeb"><h3>Wan Muhammad Naqeeb</h3><small>User Interface Designer</small><p class="todo">Responsibilities</p></div>
-<div class="card"><img src="assets/fareez.jpg" alt="Ahmad Fareez Fitri"><h3>Ahmad Fareez Fitri</h3><small>Executive Assistant</small><p class="todo">Responsibilities</p></div>
+<div class="card"><img src="assets/arryan.jpg" alt="Arryan Rayqal"><h3>Arryan Rayqal</h3><small>Chief Executive Officer</small><p>Role focus: guiding the project direction and keeping the team aligned with the overall goals.</p></div>
+<div class="card"><img src="assets/ammar.jpg" alt="Wan Ammar Daiyan"><h3>Wan Ammar Daiyan</h3><small>Chief Operating Officer</small><p>Role focus: coordinating project tasks and helping the development work stay organised.</p></div>
+<div class="card"><img src="assets/asyraf.jpg" alt="Muhammad Asyraf"><h3>Muhammad Asyraf</h3><small>Chief Marketing Officer</small><p>Role focus: communicating LÜMG’s purpose and planning how to reach its target users.</p></div>
+<div class="card"><img src="assets/naqeeb.jpg" alt="Wan Muhammad Naqeeb"><h3>Wan Muhammad Naqeeb</h3><small>User Interface Designer</small><p>Role focus: shaping the app’s screen layouts, visual consistency and ease of navigation.</p></div>
+<div class="card"><img src="assets/fareez.jpg" alt="Ahmad Fareez Fitri"><h3>Ahmad Fareez Fitri</h3><small>Executive Assistant</small><p>Role focus: supporting project coordination, documentation and day-to-day organisation.</p></div>
 </div></div></section><section id="problem"><div class="in">
 <h2><span class="tag">Problem &amp; target user</span></h2>
 <div class="cols"><div>
@@ -97,7 +95,7 @@ section{padding:64px 6vw}
 <figure><img src="assets/p-charity.jpg" alt="Volunteers sorting donations"><figcaption>Unknown donation spots</figcaption></figure>
 <figure><img src="assets/p-waste.jpg" alt="Wasted household items"><figcaption>Usable items go to waste</figcaption></figure>
 <figure><img src="assets/p-ocean.jpg" alt="Plastic waste in the ocean"><figcaption>Environmental harm</figcaption></figure></div>
-<p class="todo" style="margin-top:18px">Research evidence: our proposal points to two themes – low recycling rates &amp; landfill pressure, and household waste &amp; reuse habits. Add the actual statistics, survey results or articles here with their sources.</p>
+<p style="margin-top:18px">LÜMG is designed around two related challenges: usable household items being discarded and people needing an easier way to pass items on for reuse. This page does not present a measured local recycling rate or survey result; any statistics used in future should include a reliable source and date.</p>
 </div></section><section id="solution" class="g"><div class="in">
 <h2><span class="tag">Our solution</span></h2>
 <p><strong>LÜMG</strong> is a mobile app that guides people to share, donate or recycle unwanted items, and shows nearby locations that give those items a second life.</p>
@@ -108,7 +106,7 @@ section{padding:64px 6vw}
 <div class="card"><h3>Built with</h3><p>Flutter (Dart) for the mobile app and Supabase for database, login and image storage.</p></div>
 </div></div></section><footer><p>LÜMG – Letting Unused Matters Go · Group JANeco · F3 Mobile App PBL</p></footer>
 <script>
-// Fill these in – paste links, save, and re-upload index.html
+// Project media and distribution links are configured below.
 const LINKS={promo:"",doc:"",apk:"",demo:""};
 const yt=u=>{const m=u.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);return m?"https://www.youtube.com/embed/"+m[1]:u};
 function vid(id,u){const e=document.getElementById(id);if(!u||!e)return;e.innerHTML='<iframe class="vid" src="'+yt(u)+'" title="Video" allowfullscreen loading="lazy"></iframe>'}
